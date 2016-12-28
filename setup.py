@@ -31,8 +31,6 @@ __version__ = "2.1.0"
 __maintainer__ = __author__
 __status__ = "Development"
 
-def _post_install():
-  os.chmod("/etc/bash_completion.d/s4cmd",755)
 
 class install(_install):
   def run(self):

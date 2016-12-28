@@ -37,8 +37,6 @@ def _post_install():
 class install(_install):
   def run(self):
     _install.run(self)
-    mode = stat.S_IREAD | stat.S_IWRITE | stat.S_IRGRP | stat.S_IROTH
-    os.chmod("/etc/bash_completion.d/s4cmd", mode)
     
 
 setup(name='s4cmd',
